@@ -131,6 +131,7 @@ for product in products:
                     #check if work is done
                     if not rewrite and os.path.isfile(output_file+".tif"):
                         continue
+                    print("Masking " + imgs_files[0] + " \r\nto: "+ output_file)
                     if writeJP2:
                         maskFile(imgs_files[0], cld_files[0], scl_files[0], output_file, factor=2, saveJ2K=True)
                     else:
@@ -145,6 +146,7 @@ for product in products:
                     # check if work is done
                     if not rewrite and os.path.isfile(output_file + ".tif"):
                         continue
+                    print("Masking " + imgs_files[0] + " \r\nto: " + output_file)
                     if writeJP2:
                         maskFile(imgs_files[0], cld_files[0], scl_files[0], output_file, factor=1, saveJ2K=True)
                     else:
